@@ -7,12 +7,14 @@
         <link rel="stylesheet" href="css/home-navigation.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/join-our-forum.css">
+        <link rel="stylesheet" href="css/footer.css">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sriracha" rel="stylesheet">
 
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -23,7 +25,16 @@
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     </head>
-    <body>
+    <body style="background-color: #FBEAFF;">
+        <!--facebook fanpage-->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.12';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
 
         <!--       Navigation bar-->
 
@@ -85,10 +96,20 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" interval="5000">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img class="d-block img-fluid" src="img/header-slide/header-slide01.jpg" alt="First slide" style="width: 100vw; height: auto;">
+                    <a href="#">
+                        <img class="d-block img-fluid" src="img/header-slide/header-slide01.jpg" alt="First slide" style="width: 100vw; height: auto;">
+                        <div class="carousel-caption d-none d-md-block h1 hot-news-caption-p">
+                            <p>HOT NEWS HERE</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block img-fluid" src="img/header-slide/header-slide02.jpg" alt="Second slide" style="width: 100vw; height: auto;">
+                    <a href="#">
+                        <img class="d-block img-fluid" src="img/header-slide/header-slide02.jpg" alt="First slide" style="width: 100vw; height: auto;">
+                        <div class="carousel-caption d-none d-md-block h1 hot-news-caption-p">
+                            <p>HOT NEWS HERE</p>
+                        </div>
+                    </a>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -119,10 +140,11 @@
 
         <!--        join our forum-->
 
-        <div class="container" id="wrap-content-forum-p">
+        <div class="container pb-3 mb-5" id="wrap-content-forum-p">
+            <img src="img/pin.png" class="pin-p">
             <!--           heading-->
             <div class="row-md-5 text-center pt-2">
-                <h3 id="heading-forum-p">JOIN OUR FORUM</h3>
+                <h3 id="heading-forum-p"><strong>JOIN OUR FORUM</strong></h3>
             </div>
             <!--            end of heading-->
 
@@ -131,9 +153,15 @@
             <div class="row justify-content-center">
                 <a href="#" class="col-lg-4 text-center my-5 mx-5 home-gallery-p px-0">
                     <img src="img/forum/forum1.jpg" class="gallery-item-p" width="380" height="auto">
+                    <h4 class="gallery-item-title-p">
+                        Title
+                    </h4>
                 </a>
                 <a href="#" class="col-lg-4 text-center my-5 mx-5 home-gallery-p px-0">
                     <img src="img/forum/forum2.jpg" class="gallery-item-p" width="380" height="auto">
+                    <h4 class="gallery-item-title-p">
+                        Title
+                    </h4>
                 </a>
             </div>
             <!--            end of row 1-->
@@ -141,20 +169,39 @@
             <div class="row justify-content-center">
                 <a href="#" class="col-lg-4 text-center my-5 mx-5 home-gallery-p px-0">
                     <img src="img/forum/forum3.jpg" class="gallery-item-p" width="380" height="auto">
+                    <h4 class="gallery-item-title-p">
+                        Title
+                    </h4>
 
                 </a>
                 <a href="#" class="col-lg-4 text-center my-5 mx-5 home-gallery-p px-0">
                     <img src="img/forum/forum4.jpg" class="gallery-item-p" width="380" height="auto">
+                    <h4 class="gallery-item-title-p">
+                        Title
+                    </h4>
                 </a>
             </div>
             <!--            end of row 2-->
             <!--       view more button-->
             <div class="row-md-5 text-center pb-3">
-                <a href="#" class="home-view-more-p">VIEW MORE</a>
+                <a href="#" class="home-view-more-p">
+                    VIEW MORE
+                    <i class="fas fa-angle-double-right"></i> 
+                </a>
             </div>
             <!--       end of view more button-->
         </div>
         <!--        end of forum-->
 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light bottom">
+            <div class="container justify-content-end">
+                <div class="fb-page" data-href="https://www.facebook.com/fcodefpt/" data-tabs="timeline" data-height="50px" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+                    <blockquote cite="https://www.facebook.com/fcodefpt/" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/fcodefpt/">F-Code
+                        </a>
+                    </blockquote>
+                </div>
+            </div>
+        </nav>
     </body>
 </html>
