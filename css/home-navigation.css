@@ -1,3 +1,7 @@
 .container-fluid {
     text-align: center;
 }
+
+#navigation-p {
+    font-family: 'Lobster', cursive;
+}
